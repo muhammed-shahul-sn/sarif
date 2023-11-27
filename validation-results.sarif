@@ -9,9 +9,9 @@
           "informationUri": "https://eslint.org",
           "rules": [
             {
-              "id": "no-unused-vars",
+              "id": "policy_001",
               "shortDescription": {
-                "text": "disallow unused variables"
+                "text": "container_is_not_privileged"
               },
               "helpUri": "https://eslint.org/docs/rules/no-unused-vars",
               "properties": {
@@ -48,7 +48,7 @@
               }
             }
           ],
-          "ruleId": "no-unused-vars",
+          "ruleId": "policy_001",
           "ruleIndex": 0
         }
       ]
