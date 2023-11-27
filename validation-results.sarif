@@ -1,44 +1,55 @@
 {
   "version": "2.1.0",
+  "$schema": "http://json.schemastore.org/sarif-2.1.0-rtm.4",
   "runs": [
     {
       "tool": {
         "driver": {
-          "name": "YourToolName",
-          "rules": []
+          "name": "ESLint",
+          "informationUri": "https://eslint.org",
+          "rules": [
+            {
+              "id": "no-unused-vars",
+              "shortDescription": {
+                "text": "disallow unused variables"
+              },
+              "helpUri": "https://eslint.org/docs/rules/no-unused-vars",
+              "properties": {
+                "category": "Variables"
+              }
+            }
+          ]
         }
       },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/dev/sarif/sarif-tutorials/samples/Introduction/simple-example.js"
+          }
+        }
+      ],
       "results": [
         {
-          "ruleId": "container_is_not_privileged",
+          "level": "error",
           "message": {
-            "text": "Policy violation: container_is_not_privileged"
+            "text": "'x' is assigned a value but never used."
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Development_1-v41.dpl"
+                  "uri": "file:///C:/dev/sarif/sarif-tutorials/samples/Introduction/simple-example.js",
+                  "index": 0
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 1
+                  "startColumn": 5
                 }
               }
             }
           ],
-          "properties": {
-            "impacted_node.name": "",
-            "node_path": "",
-            "snapshot.name": "Development_1-v41.dpl",
-            "policy.name": "container_is_not_privileged",
-            "snapshot.application_id.name": "demoApp1"
-          },
-          "fingerprints": {
-            "md5": {
-              "value": "{\"decision\":\"compliant\",\"results\":[],\"warnings\":[],\"failures\":[],\"_name_\":\"V1.0\",\"type\":\"policy\",\"state\":\"complete\"}"
-            }
-          }
+          "ruleId": "no-unused-vars",
+          "ruleIndex": 0
         }
       ]
     }
