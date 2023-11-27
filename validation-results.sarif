@@ -20,7 +20,7 @@
                                 "text": "Admission of privileged containers should be minimized"
                             },
                             "defaultConfiguration": {
-                                "level": "fail"
+                                "level": "error"
                             },
                             "helpUri": "https://docs.servicenow.com/bundle/vancouver-devops/page/product/devops-config/reference/devops-config-gen-policies.html#d58962e105"
                         }
@@ -31,7 +31,7 @@
                 {
                     "ruleId": "c878abb4-cca5-4724-92b9-289be68bd47c",
                     "ruleIndex": 0,
-                    "kind": "fail",
+                    "kind": "erro",
                     "message": {
                         "text": "Attribute 'allow_privilege_escalation' is true"
                     },
