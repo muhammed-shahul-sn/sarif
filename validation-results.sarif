@@ -34,12 +34,11 @@
             "policy.name": "container_is_not_privileged",
             "snapshot.application_id.name": "demoApp1"
           },
-          "fingerprints": [
-            {
-              "algorithm": "md5",
+          "fingerprints": {
+            "md5": {
               "value": "{\"decision\":\"compliant\",\"results\":[],\"warnings\":[],\"failures\":[],\"_name_\":\"V1.0\",\"type\":\"policy\",\"state\":\"complete\"}"
             }
-          ]
+          }
         }
       ]
     }
