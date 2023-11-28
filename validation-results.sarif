@@ -29,7 +29,7 @@
             },
             "results": [
                 {
-                    "ruleId": "c878abb4-cca5-4724-92b9-289be68bd47c",
+                    "ruleId": "container_is_not_privileged1",
                     "ruleIndex": 0,
                     "kind": "fail",
                     "message": {
