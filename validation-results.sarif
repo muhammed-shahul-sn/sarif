@@ -5,15 +5,15 @@
     {
       "tool": {
         "driver": {
-          "name": "Devops config policy content pack1",
+          "name": "Devops config policy content pack",
           "version": "1.2.0",
-          "fullName": "Devops config policy content pack1",
+          "fullName": "Devops config policy content pack",
           "rules": [
             {
-              "id": "container_is_not_privileged1",
-              "name": "container_is_not_privileged1",
+              "id": "Development_1-v42.dpl:container_is_not_privileged",
+              "name": "container_is_not_privileged",
               "shortDescription": {
-                "text": "container_is_not_privileged1"
+                "text": "Development_1-v42.dpl:container_is_not_privileged"
               },
               "fullDescription": {
                 "text": "application.name: demoApp1, snapshot.name: Development_1-v42.dpl"
@@ -23,10 +23,10 @@
               }
             },
             {
-              "id": "mandatoryKeys",
+              "id": "Development_1-v42.dpl:mandatoryKeys",
               "name": "mandatoryKeys",
               "shortDescription": {
-                "text": "mandatoryKeys"
+                "text": "Development_1-v42.dpl:mandatoryKeys"
               },
               "fullDescription": {
                 "text": "application.name: demoApp1, snapshot.name: Development_1-v42.dpl"
@@ -40,7 +40,7 @@
       },
       "results": [
         {
-          "ruleId": "container_is_not_privileged",
+          "ruleId": "Development_1-v42.dpl:container_is_not_privileged",
           "kind": "pass",
           "message": {
             "text": "{\"decision\":\"compliant\",\"results\":[],\"warnings\":[],\"failures\":[],\"_name_\":\"V1.0\",\"type\":\"policy\",\"state\":\"complete\"}"
@@ -56,7 +56,7 @@
           ]
         },
         {
-          "ruleId": "mandatoryKeys1",
+          "ruleId": "Development_1-v42.dpl:mandatoryKeys",
           "kind": "fail",
           "message": {
             "text": "{\"decision\":\"non_compliant\",\"results\":[],\"warnings\":[],\"failures\":[{\"name\":\"compliancy violation\",\"description\":\"mandatory key ttt is not found\",\"impacted_node\":\"3cf456944375311010eb598e75b8f2b2\",\"effective_path\":\"!$!+!,\",\"snapshot\":\"0cd84d1943fa311010eb598e75b8f2e7\"}],\"_name_\":\"V4.0\",\"type\":\"policy\",\"state\":\"complete\"}"
