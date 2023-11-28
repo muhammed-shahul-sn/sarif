@@ -5,15 +5,15 @@
     {
       "tool": {
         "driver": {
-          "name": "Devops config policy content pack",
+          "name": "Devops config policy content pack1",
           "version": "1.2.0",
-          "fullName": "Devops config policy content pack",
+          "fullName": "Devops config policy content pack1",
           "rules": [
             {
-              "id": "container_is_not_privileged",
-              "name": "container_is_not_privileged",
+              "id": "container_is_not_privileged1",
+              "name": "container_is_not_privileged1",
               "shortDescription": {
-                "text": "container_is_not_privileged"
+                "text": "container_is_not_privileged1"
               },
               "fullDescription": {
                 "text": "application.name: demoApp1, snapshot.name: Development_1-v42.dpl"
@@ -56,7 +56,7 @@
           ]
         },
         {
-          "ruleId": "mandatoryKeys",
+          "ruleId": "mandatoryKeys1",
           "kind": "fail",
           "message": {
             "text": "{\"decision\":\"non_compliant\",\"results\":[],\"warnings\":[],\"failures\":[{\"name\":\"compliancy violation\",\"description\":\"mandatory key ttt is not found\",\"impacted_node\":\"3cf456944375311010eb598e75b8f2b2\",\"effective_path\":\"!$!+!,\",\"snapshot\":\"0cd84d1943fa311010eb598e75b8f2e7\"}],\"_name_\":\"V4.0\",\"type\":\"policy\",\"state\":\"complete\"}"
