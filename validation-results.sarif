@@ -8,21 +8,17 @@
                     "name": "Devops config policy content pack",
                     "version": "1.2.0",
                     "fullName": "Devops config policy content pack",
-                    "informationUri": "https://docs.servicenow.com/bundle/vancouver-devops/page/product/devops-config/reference/devops-config-gen-policies.html",
                     "rules": [
                         {
                             "id": "container_is_not_privileged1",
                             "name": "Container Allow Privilege Escalation Is True2",
-                            "shortDescription": {
-                                "text": "Container Allow Privilege Escalation Is True3"
-                            },
+
                             "fullDescription": {
                                 "text": "Admission of privileged containers should be minimized4"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
-                            },
-                            "helpUri": "https://docs.servicenow.com/bundle/vancouver-devops/page/product/devops-config/reference/devops-config-gen-policies.html#d58962e105"
+                            }
                         }
                     ]
                 }
@@ -35,13 +31,6 @@
                     "message": {
                         "text": "Attribute 'allow_privilege_escalation' is true6"
                     },
-                      "properties": {
-                        "impacted_node.name": "Development_1",
-                        "node_path": "",
-                        "snapshot.name": "Development_1-v42.dpl",
-                        "policy.name": "mandatoryKeys",
-                        "snapshot.application_id.name": "demoApp1"
-                      },
                     "locations": [
                         {
                             "physicalLocation": {
