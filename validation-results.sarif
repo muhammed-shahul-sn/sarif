@@ -17,6 +17,9 @@
               },
               "fullDescription": {
                 "text": "application.name: demoApp1, snapshot.name: Development_1-v42.dpl"
+              },
+              "defaultConfiguration": {
+                "level": "none"
               }
             },
             {
@@ -27,6 +30,9 @@
               },
               "fullDescription": {
                 "text": "application.name: demoApp1, snapshot.name: Development_1-v42.dpl"
+              },
+              "defaultConfiguration": {
+                "level": "error"
               }
             }
           ]
