@@ -1,47 +1,71 @@
 {
-    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
-    "version": "2.1.0",
-    "runs": [
-        {
-            "tool": {
-                "driver": {
-                    "name": "Devops config policy content pack",
-                    "version": "1.2.0",
-                    "fullName": "Devops config policy content pack",
-                    "rules": [
-                        {
-                            "id": "container_is_not_privileged1",
-                            "name": "Container Allow Privilege Escalation Is True2",
-
-                            "fullDescription": {
-                                "text": "Admission of privileged containers should be minimized4"
-                            },
-                            "defaultConfiguration": {
-                                "level": "error"
-                            }
-                        }
-                    ]
-                }
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Devops config policy content pack",
+          "version": "1.2.0",
+          "fullName": "Devops config policy content pack",
+          "rules": [
+            {
+              "id": "container_is_not_privileged",
+              "name": "container_is_not_privileged",
+              "shortDescription": {
+                "text": "container_is_not_privileged"
+              },
+              "fullDescription": {
+                "text": "application.name: demoApp1, snapshot.name: Development_1-v42.dpl"
+              }
             },
-            "results": [
-                {
-                    "ruleId": "container_is_not_privileged1",
-                    "ruleIndex": 0,
-                    "kind": "fail",
-                    "message": {
-                        "text": "Attribute 'allow_privilege_escalation' is true6"
-                    },
-                    "locations": [
-                        {
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "uri": "assets/queries/terraform/kubernetes/container_allow_privilege_escalation_is_true/test/positive.tf"
-                                }
-                            }
-                        }
-                    ]
-                }
-            ]
+            {
+              "id": "mandatoryKeys",
+              "name": "mandatoryKeys",
+              "shortDescription": {
+                "text": "mandatoryKeys"
+              },
+              "fullDescription": {
+                "text": "application.name: demoApp1, snapshot.name: Development_1-v42.dpl"
+              }
+            }
+          ]
         }
-    ]
+      },
+      "results": [
+        {
+          "ruleId": "container_is_not_privileged",
+          "kind": "pass",
+          "message": {
+            "text": "{\"decision\":\"compliant\",\"results\":[],\"warnings\":[],\"failures\":[],\"_name_\":\"V1.0\",\"type\":\"policy\",\"state\":\"complete\"}"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Development_1-v42.dpl"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "mandatoryKeys",
+          "kind": "fail",
+          "message": {
+            "text": "{\"decision\":\"non_compliant\",\"results\":[],\"warnings\":[],\"failures\":[{\"name\":\"compliancy violation\",\"description\":\"mandatory key ttt is not found\",\"impacted_node\":\"3cf456944375311010eb598e75b8f2b2\",\"effective_path\":\"!$!+!,\",\"snapshot\":\"0cd84d1943fa311010eb598e75b8f2e7\"}],\"_name_\":\"V4.0\",\"type\":\"policy\",\"state\":\"complete\"}"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Development_1-v42.dpl"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
