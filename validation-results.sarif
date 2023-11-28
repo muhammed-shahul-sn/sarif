@@ -22,7 +22,6 @@
                             "defaultConfiguration": {
                                 "level": "error"
                             },
-                            "message": "Policy violation: container_is_not_privileged5",
                             "helpUri": "https://docs.servicenow.com/bundle/vancouver-devops/page/product/devops-config/reference/devops-config-gen-policies.html#d58962e105"
                         }
                     ]
@@ -36,6 +35,13 @@
                     "message": {
                         "text": "Attribute 'allow_privilege_escalation' is true6"
                     },
+                      "properties": {
+                        "impacted_node.name": "Development_1",
+                        "node_path": "",
+                        "snapshot.name": "Development_1-v42.dpl",
+                        "policy.name": "mandatoryKeys",
+                        "snapshot.application_id.name": "demoApp1"
+                      },
                     "locations": [
                         {
                             "physicalLocation": {
