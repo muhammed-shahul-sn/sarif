@@ -9,13 +9,13 @@
           "fullName": "DevOps Config Policy content pack",
           "rules": [
             {
-              "id": "Development_1-v42.dpl:mandatoryKeys",
+              "id": "Development_1-v44.dpl:mandatoryKeys",
               "name": "mandatoryKeys",
               "shortDescription": {
-                "text": "Development_1-v42.dpl:mandatoryKeys"
+                "text": "Development_1-v44.dpl:mandatoryKeys"
               },
               "fullDescription": {
-                "text": "application.name: demoApp1, snapshot.name: Development_1-v43.dpl"
+                "text": "application.name: demoApp1, snapshot.name: Development_1-v44.dpl"
               },
               "defaultConfiguration": {
                 "level": "error"
@@ -26,7 +26,7 @@
       },
       "results": [
         {
-          "ruleId": "Development_1-v42.dpl:mandatoryKeys",
+          "ruleId": "Development_1-v44.dpl:mandatoryKeys",
           "kind": "fail",
           "message": {
             "text": "{\"decision\":\"non_compliant\",\"results\":[],\"warnings\":[],\"failures\":[{\"name\":\"compliancy violation\",\"description\":\"mandatory key ttt is not found\",\"impacted_node\":\"3cf456944375311010eb598e75b8f2b2\",\"effective_path\":\"!$!+!,\",\"snapshot\":\"0cd84d1943fa311010eb598e75b8f2e7\"}],\"_name_\":\"V4.0\",\"type\":\"policy\",\"state\":\"complete\"}"
@@ -35,11 +35,14 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Development_1-v42.dpl"
+                  "uri": "Development_1-v44.dpl"
                 }
               }
             }
-          ]
+          ],
+          "properties": {
+            "environment": "env1"
+          }
         }
       ]
     }
