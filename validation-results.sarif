@@ -5,27 +5,34 @@
     {
       "tool": {
         "driver": {
-          "name": "DevOps Config Policy content pack",
-          "fullName": "DevOps Config Policy content pack",
+          "name": "Devops config policy content pack",
+          "version": "1.2.0",
+          "fullName": "Devops config policy content pack",
           "rules": [
             {
-              "id": "Development_1-v46.dpl:mandatoryKeys",
+              "id": "Development_1-v76.dpl:mandatoryKeys",
               "name": "mandatoryKeys",
               "shortDescription": {
-                "text": "Development_1-v46.dpl:mandatoryKeys"
+                "text": "Development_1-v76.dpl:mandatoryKeys"
               },
               "fullDescription": {
-                "text": "application.name: demoApp1, snapshot.name: Development_1-v46.dpl"
+                "text": "application.name: Demo_App10, snapshot.name: Development_1-v76.dpl"
               },
               "defaultConfiguration": {
                 "level": "error"
+              }
+            },
+            {
+              "id": "Development_1-v76.dpl:noForbiddenValues",
+              "name": "noForbiddenValues",
+              "shortDescription": {
+                "text": "Development_1-v76.dpl:noForbiddenValues"
               },
-              "properties" : {
-                 "id" : "java/unsafe-deserialization",
-                 "kind" : "path-problem",
-                 "name" : "...",
-                 "problem.severity" : "error",
-                 "security-severity" : "9.8"
+              "fullDescription": {
+                "text": "application.name: Demo_App10, snapshot.name: Development_1-v76.dpl"
+              },
+              "defaultConfiguration": {
+                "level": "error"
               }
             }
           ]
@@ -33,23 +40,36 @@
       },
       "results": [
         {
-          "ruleId": "Development_1-v46.dpl:mandatoryKeys",
+          "ruleId": "Development_1-v76.dpl:mandatoryKeys",
           "kind": "fail",
           "message": {
-            "text": "{\"decision\":\"non_compliant\",\"results\":[],\"warnings\":[],\"failures\":[{\"name\":\"compliancy violation\",\"description\":\"mandatory key ttt is not found\",\"impacted_node\":\"3cf456944375311010eb598e75b8f2b2\",\"effective_path\":\"!$!+!,\",\"snapshot\":\"0cd84d1943fa311010eb598e75b8f2e7\"}],\"_name_\":\"V4.0\",\"type\":\"policy\",\"state\":\"complete\"}"
+            "text": "{\"decision\":\"non_compliant\",\"results\":[],\"warnings\":[],\"failures\":[{\"name\":\"compliancy violation\",\"description\":\"mandatory key ttt is not found\",\"impacted_node\":\"38ad63f0db523d10d3169f73f3961979\",\"effective_path\":\"!)N`!)N~!)P]\",\"snapshot\":\"496cedabdb3ab110d3169f73f3961967\"},{\"name\":\"compliancy violation\",\"description\":\"mandatory key rrr is not found\",\"impacted_node\":\"38ad63f0db523d10d3169f73f3961979\",\"effective_path\":\"!)N`!)N~!)P]\",\"snapshot\":\"496cedabdb3ab110d3169f73f3961967\"},{\"name\":\"compliancy violation\",\"description\":\"mandatory key fff is not found\",\"impacted_node\":\"38ad63f0db523d10d3169f73f3961979\",\"effective_path\":\"!)N`!)N~!)P]\",\"snapshot\":\"496cedabdb3ab110d3169f73f3961967\"}],\"_name_\":\"V4.0\",\"type\":\"policy\",\"state\":\"complete\"}"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Development_1-v46.dpl"
+                  "uri": "Development_1-v76.dpl"
                 }
               }
             }
-          ],
-          "properties": {
-            "environment": "env1"
-          }
+          ]
+        },
+        {
+          "ruleId": "Development_1-v76.dpl:noForbiddenValues",
+          "kind": "fail",
+          "message": {
+            "text": "{\"decision\":\"non_compliant\",\"results\":[],\"warnings\":[],\"failures\":[{\"name\":\"forbidden value VALUE1000 detected\",\"description\":\"forbidden value found in CDI KEY1:VALUE1000\",\"impacted_node\":\"65c96542db7ef91052255c6cd39619fe\",\"effective_path\":\"!)N`!)N~!)P]!)ZT!+$S!+0S!+0T\",\"snapshot\":\"496cedabdb3ab110d3169f73f3961967\"}],\"_name_\":\"V3.0\",\"type\":\"policy\",\"state\":\"complete\"}"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Development_1-v76.dpl"
+                }
+              }
+            }
+          ]
         }
       ]
     }
