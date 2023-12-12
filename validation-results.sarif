@@ -10,26 +10,26 @@
           "fullName": "Devops config policy content pack",
           "rules": [
             {
-              "id": "Development_1-v76.dpl:mandatoryKeys",
-              "name": "mandatoryKeys",
+              "id": "Production-v18.dpl:duplicateValues",
+              "name": "duplicateValues",
               "shortDescription": {
-                "text": "Development_1-v76.dpl:mandatoryKeys"
+                "text": "Production-v18.dpl:duplicateValues"
               },
               "fullDescription": {
-                "text": "application.name: Demo_App10, snapshot.name: Development_1-v76.dpl"
+                "text": "application.name: PaymentDemo, snapshot.name: Production-v18.dpl"
               },
               "defaultConfiguration": {
                 "level": "error"
               }
             },
             {
-              "id": "Development_1-v76.dpl:noForbiddenValues",
-              "name": "noForbiddenValues",
+              "id": "Production-v18.dpl:mandatoryKeys",
+              "name": "mandatoryKeys",
               "shortDescription": {
-                "text": "Development_1-v76.dpl:noForbiddenValues"
+                "text": "Production-v18.dpl:mandatoryKeys"
               },
               "fullDescription": {
-                "text": "application.name: Demo_App10, snapshot.name: Development_1-v76.dpl"
+                "text": "application.name: PaymentDemo, snapshot.name: Production-v18.dpl"
               },
               "defaultConfiguration": {
                 "level": "error"
@@ -40,32 +40,32 @@
       },
       "results": [
         {
-          "ruleId": "Development_1-v76.dpl:mandatoryKeys",
+          "ruleId": "Production-v18.dpl:duplicateValues",
           "kind": "fail",
           "message": {
-            "text": "{\"decision\":\"non_compliant\",\"results\":[],\"warnings\":[],\"failures\":[{\"name\":\"compliancy violation\",\"description\":\"mandatory key ttt is not found\",\"impacted_node\":\"38ad63f0db523d10d3169f73f3961979\",\"effective_path\":\"!)N`!)N~!)P]\",\"snapshot\":\"496cedabdb3ab110d3169f73f3961967\"},{\"name\":\"compliancy violation\",\"description\":\"mandatory key rrr is not found\",\"impacted_node\":\"38ad63f0db523d10d3169f73f3961979\",\"effective_path\":\"!)N`!)N~!)P]\",\"snapshot\":\"496cedabdb3ab110d3169f73f3961967\"},{\"name\":\"compliancy violation\",\"description\":\"mandatory key fff is not found\",\"impacted_node\":\"38ad63f0db523d10d3169f73f3961979\",\"effective_path\":\"!)N`!)N~!)P]\",\"snapshot\":\"496cedabdb3ab110d3169f73f3961967\"}],\"_name_\":\"V4.0\",\"type\":\"policy\",\"state\":\"complete\"}"
+            "text": "{\"decision\":\"non_compliant\",\"results\":[],\"warnings\":[],\"failures\":[{\"name\":\"compliancy violation\",\"description\":\"Keys (Production/release-1.0/web-api-v1.0/test-data.json/key1) and (Production/release-1.0/web-api-v1.0/test-data.xml/root/key1) have same value\",\"impacted_node\":\"61259b61dbc3791052255c6cd3961990\",\"effective_path\":\"!+7O!+7S!+7T\",\"snapshot\":\"fa535b75db0b3d10d3169f73f396194b\"},{\"name\":\"compliancy violation\",\"description\":\"Keys (Production/release-1.0/web-api-v1.0/test-data.json/key2) and (Production/release-1.0/web-api-v1.0/test-data.xml/root/key2) have same value\",\"impacted_node\":\"61259b61dbc3791052255c6cd3961990\",\"effective_path\":\"!+7O!+7S!+7T\",\"snapshot\":\"fa535b75db0b3d10d3169f73f396194b\"},{\"name\":\"compliancy violation\",\"description\":\"Keys (Production/web-api-v1.0/test-data.yml/key1) and (Production/release-1.0/web-api-v1.0/test-data.xml/root/key1) have same value\",\"impacted_node\":\"61259b61dbc3791052255c6cd3961990\",\"effective_path\":\"!+7O!+7S!+7T\",\"snapshot\":\"fa535b75db0b3d10d3169f73f396194b\"},{\"name\":\"compliancy violation\",\"description\":\"Keys (Production/web-api-v1.0/test-data.yml/key2) and (Production/release-1.0/web-api-v1.0/test-data.xml/root/key2) have same value\",\"impacted_node\":\"61259b61dbc3791052255c6cd3961990\",\"effective_path\":\"!+7O!+7S!+7T\",\"snapshot\":\"fa535b75db0b3d10d3169f73f396194b\"},{\"name\":\"compliancy violation\",\"description\":\"Keys (Production/web-api-v1.0/test-data2.yml/key3) and (Production/release-1.0/web-api-v1.0/test-data2.json/key3) have same value\",\"impacted_node\":\"61259b61dbc3791052255c6cd3961990\",\"effective_path\":\"!+7O!+7S!+7T\",\"snapshot\":\"fa535b75db0b3d10d3169f73f396194b\"},{\"name\":\"compliancy violation\",\"description\":\"Keys (Production/web-api-v1.0/test-data2.yml/key4) and (Production/release-1.0/web-api-v1.0/test-data2.json/key4) have same value\",\"impacted_node\":\"61259b61dbc3791052255c6cd3961990\",\"effective_path\":\"!+7O!+7S!+7T\",\"snapshot\":\"fa535b75db0b3d10d3169f73f396194b\"},{\"name\":\"compliancy violation\",\"description\":\"Keys (Production/web-api-v1.0/test-data2.yml/key5) and (Production/release-1.0/web-api-v1.0/test-data2.json/key4) have same value\",\"impacted_node\":\"61259b61dbc3791052255c6cd3961990\",\"effective_path\":\"!+7O!+7S!+7T\",\"snapshot\":\"fa535b75db0b3d10d3169f73f396194b\"}],\"description\":\"ERRORS: Keys (Production/release-1.0/web-api-v1.0/test-data.json/key1) and (Production/release-1.0/web-api-v1.0/test-data.xml/root/key1) have same value Keys (Production/release-1.0/web-api-v1.0/test-data.json/key2) and (Production/release-1.0/web-api-v1.0/test-data.xml/root/key2) have same value Keys (Production/web-api-v1.0/test-data.yml/key1) and (Production/release-1.0/web-api-v1.0/test-data.xml/root/key1) have same value Keys (Production/web-api-v1.0/test-data.yml/key2) and (Production/release-1.0/web-api-v1.0/test-data.xml/root/key2) have same value Keys (Production/web-api-v1.0/test-data2.yml/key3) and (Production/release-1.0/web-api-v1.0/test-data2.json/key3) have same value Keys (Production/web-api-v1.0/test-data2.yml/key4) and (Production/release-1.0/web-api-v1.0/test-data2.json/key4) have same value Keys (Production/web-api-v1.0/test-data2.yml/key5) and (Production/release-1.0/web-api-v1.0/test-data2.json/key4) have same value\",\"_name_\":\"V2.0\",\"type\":\"policy\",\"state\":\"complete\"}"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Development_1-v76.dpl"
+                  "uri": "Production-v18.dpl"
                 }
               }
             }
           ]
         },
         {
-          "ruleId": "Development_1-v76.dpl:noForbiddenValues",
+          "ruleId": "Production-v18.dpl:mandatoryKeys",
           "kind": "fail",
           "message": {
-            "text": "{\"decision\":\"non_compliant\",\"results\":[],\"warnings\":[],\"failures\":[{\"name\":\"forbidden value VALUE1000 detected\",\"description\":\"forbidden value found in CDI KEY1:VALUE1000\",\"impacted_node\":\"65c96542db7ef91052255c6cd39619fe\",\"effective_path\":\"!)N`!)N~!)P]!)ZT!+$S!+0S!+0T\",\"snapshot\":\"496cedabdb3ab110d3169f73f3961967\"}],\"_name_\":\"V3.0\",\"type\":\"policy\",\"state\":\"complete\"}"
+            "text": "{\"decision\":\"non_compliant\",\"results\":[],\"warnings\":[],\"failures\":[{\"name\":\"compliancy violation\",\"description\":\"mandatory key key6 is not found\",\"impacted_node\":\"61259b61dbc3791052255c6cd3961990\",\"effective_path\":\"!+7O!+7S!+7T\",\"snapshot\":\"fa535b75db0b3d10d3169f73f396194b\"},{\"name\":\"compliancy violation\",\"description\":\"mandatory key key7 is not found\",\"impacted_node\":\"61259b61dbc3791052255c6cd3961990\",\"effective_path\":\"!+7O!+7S!+7T\",\"snapshot\":\"fa535b75db0b3d10d3169f73f396194b\"}],\"_name_\":\"V4.0\",\"type\":\"policy\",\"state\":\"complete\"}"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Development_1-v76.dpl"
+                  "uri": "Production-v18.dpl"
                 }
               }
             }
