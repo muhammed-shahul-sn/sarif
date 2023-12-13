@@ -7,65 +7,37 @@
         "driver": {
           "name": "Devops config policy content pack",
           "version": "1.2.0",
-          "fullName": "Devops config policy content pack",
-          "rules": [
-            {
-              "id": "Production-v21.dpl:noForbiddenValues",
-              "name": "noForbiddenValues",
-              "shortDescription": {
-                "text": "Production-v21.dpl:noForbiddenValues"
-              },
-              "fullDescription": {
-                "text": "application.name: PaymentDemo, snapshot.name: Production-v21.dpl"
-              },
-              "defaultConfiguration": {
-                "level": "error"
-              }
-            },
-            {
-              "id": "Production-v21.dpl:mandatoryKeys",
-              "name": "mandatoryKeys",
-              "shortDescription": {
-                "text": "Production-v21.dpl:mandatoryKeys"
-              },
-              "fullDescription": {
-                "text": "application.name: PaymentDemo, snapshot.name: Production-v21.dpl"
-              },
-              "defaultConfiguration": {
-                "level": "error"
-              }
-            }
-          ]
+          "fullName": "Devops config policy content pack"
         }
       },
       "results": [
         {
-          "ruleId": "Production-v21.dpl:noForbiddenValues",
+          "ruleId": "Development_1-v43.dpl:mandatoryKeys",
           "kind": "fail",
           "message": {
-            "text": "{\"decision\":\"non_compliant\",\"results\":[],\"warnings\":[],\"failures\":[{\"name\":\"forbidden value VALUE5 detected\",\"description\":\"forbidden value found in CDI KEY5:VALUE5\",\"impacted_node\":\"884b277ddb03b91052255c6cd396192e\",\"effective_path\":\"!+7O!+7S!+7T!+9<!+9B!+9E\",\"snapshot\":\"f04b277ddb03b91052255c6cd396195d\"}],\"_name_\":\"V3.0\",\"type\":\"policy\",\"state\":\"complete\"}"
+            "text": "{\"node_path\":\"\",\"policy.name\":\"mandatoryKeys\",\"description\":\"mandatory key ttt is not found\",\"type\":\"failure\"}"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Production-v21.dpl"
+                  "uri": "Development_1-v43.dpl"
                 }
               }
             }
           ]
         },
         {
-          "ruleId": "Production-v21.dpl:mandatoryKeys",
+          "ruleId": "Development_1-v43.dpl:container_is_not_privileged",
           "kind": "fail",
           "message": {
-            "text": "{\"decision\":\"non_compliant\",\"results\":[],\"warnings\":[],\"failures\":[{\"name\":\"compliancy violation\",\"description\":\"mandatory key key6 is not found\",\"impacted_node\":\"61259b61dbc3791052255c6cd3961990\",\"effective_path\":\"!+7O!+7S!+7T\",\"snapshot\":\"f04b277ddb03b91052255c6cd396195d\"},{\"name\":\"compliancy violation\",\"description\":\"mandatory key key7 is not found\",\"impacted_node\":\"61259b61dbc3791052255c6cd3961990\",\"effective_path\":\"!+7O!+7S!+7T\",\"snapshot\":\"f04b277ddb03b91052255c6cd396195d\"}],\"_name_\":\"V4.0\",\"type\":\"policy\",\"state\":\"complete\"}"
+            "text": "{\"node_path\":\"\",\"policy.name\":\"container_is_not_privileged\",\"description\":\"\",\"type\":\"information\"}"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Production-v21.dpl"
+                  "uri": "Development_1-v43.dpl"
                 }
               }
             }
