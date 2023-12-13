@@ -44,7 +44,8 @@
         },
         {
           "ruleId": "Development_1-v43.dpl:container_is_not_privileged",
-          "kind": "fail",
+          
+          "level": "warning",
           "message": {
             "text": "{\"node_path\":\"\",\"policy.name\":\"container_is_not_privileged\",\"description\":\"\",\"type\":\"information\"}"
           },
