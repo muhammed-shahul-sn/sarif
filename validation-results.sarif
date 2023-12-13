@@ -7,7 +7,22 @@
         "driver": {
           "name": "Devops config policy content pack",
           "version": "1.2.0",
-          "fullName": "Devops config policy content pack"
+          "fullName": "Devops config policy content pack",
+          "rules": [
+            {
+              "id": "Development_1-v43.dpl:mandatoryKeys",
+              "name": "mandatoryKeys",
+              "shortDescription": {
+                "text": "Development_1-v43.dpl:mandatoryKeys"
+              },
+              "fullDescription": {
+                "text": "application.name: demoApp1, snapshot.name: Development_1-v43.dpl"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            }
+          ]
         }
       },
       "results": [
