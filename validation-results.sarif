@@ -19,7 +19,7 @@
                 "text": "application.name: demoApp1, snapshot.name: Development_1-v43.dpl"
               },
               "defaultConfiguration": {
-                "level": "error"
+                 "level": "warning"
               }
             }
           ]
@@ -28,7 +28,6 @@
       "results": [
         {
           "ruleId": "Development_1-v43.dpl:mandatoryKeys",
-          "kind": "fail",
           "message": {
             "text": "{\"node_path\":\"\",\"policy.name\":\"mandatoryKeys\",\"description\":\"mandatory key ttt is not found\",\"type\":\"failure\"}"
           },
