@@ -10,42 +10,42 @@
           "fullName": "Devops config policy content pack",
           "rules": [
             {
-              "id": "Development_1-v87.dpl:mandatoryKeys",
+              "id": "Development_1-v88.dpl:mandatoryKeys",
               "name": "mandatoryKeys",
               "shortDescription": {
-                "text": "Development_1-v87.dpl:mandatoryKeys"
+                "text": "Development_1-v88.dpl:mandatoryKeys"
               },
               "fullDescription": {
-                "text": "application.name: Demo_App10, snapshot.name: Development_1-v87.dpl"
+                "text": "application.name: Demo_App10, snapshot.name: Development_1-v88.dpl"
               },
               "defaultConfiguration": {
                 "level": "error"
               }
             },
             {
-              "id": "Development_1-v87.dpl:noForbiddenValues",
+              "id": "Development_1-v88.dpl:noForbiddenValues",
               "name": "noForbiddenValues",
               "shortDescription": {
-                "text": "Development_1-v87.dpl:noForbiddenValues"
+                "text": "Development_1-v88.dpl:noForbiddenValues"
               },
               "fullDescription": {
-                "text": "application.name: Demo_App10, snapshot.name: Development_1-v87.dpl"
+                "text": "application.name: Demo_App10, snapshot.name: Development_1-v88.dpl"
               },
               "defaultConfiguration": {
                 "level": "error"
               }
             },
             {
-              "id": "Development_1-v87.dpl:detectUnusedVariables",
+              "id": "Development_1-v88.dpl:detectUnusedVariables",
               "name": "detectUnusedVariables",
               "shortDescription": {
-                "text": "Development_1-v87.dpl:detectUnusedVariables"
+                "text": "Development_1-v88.dpl:detectUnusedVariables"
               },
               "fullDescription": {
-                "text": "application.name: Demo_App10, snapshot.name: Development_1-v87.dpl"
+                "text": "application.name: Demo_App10, snapshot.name: Development_1-v88.dpl"
               },
               "defaultConfiguration": {
-                "level": "error"
+                "level": "warning"
               }
             }
           ]
@@ -53,23 +53,23 @@
       },
       "results": [
         {
-          "ruleId": "Development_1-v87.dpl:mandatoryKeys",
+          "ruleId": "Development_1-v88.dpl:mandatoryKeys",
           "kind": "fail",
           "message": {
-            "text": "[{\"node_path_ui\":\"\",\"policy.name\":\"mandatoryKeys\",\"description\":\"mandatory key key002 is not found\",\"type\":\"failure\"},{\"node_path_ui\":\"\",\"policy.name\":\"mandatoryKeys\",\"description\":\"mandatory key key001 is not found\",\"type\":\"failure\"}]"
+            "text": "[{\"node_path_ui\":\"\",\"policy.name\":\"mandatoryKeys\",\"description\":\"mandatory key key001 is not found\",\"type\":\"failure\"},{\"node_path_ui\":\"\",\"policy.name\":\"mandatoryKeys\",\"description\":\"mandatory key key002 is not found\",\"type\":\"failure\"}]"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Development_1-v87.dpl"
+                  "uri": "Development_1-v88.dpl"
                 }
               }
             }
           ]
         },
         {
-          "ruleId": "Development_1-v87.dpl:noForbiddenValues",
+          "ruleId": "Development_1-v88.dpl:noForbiddenValues",
           "kind": "fail",
           "message": {
             "text": "[{\"node_path_ui\":\"rel1/kubernetes/test-data.json/key1\",\"policy.name\":\"noForbiddenValues\",\"description\":\"forbidden value found in CDI KEY1:VALUE1\",\"type\":\"failure\"}]"
@@ -78,23 +78,22 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Development_1-v87.dpl"
+                  "uri": "Development_1-v88.dpl"
                 }
               }
             }
           ]
         },
         {
-          "ruleId": "Development_1-v87.dpl:detectUnusedVariables",
-          "kind": "fail",
+          "ruleId": "Development_1-v88.dpl:detectUnusedVariables",
           "message": {
-            "text": "[{\"node_path_ui\":\"vars/var1\",\"policy.name\":\"detectUnusedVariables\",\"description\":\"Variable 'var1' is not used in the snapshot.\",\"type\":\"warning\"},{\"node_path_ui\":\"vars/var2\",\"policy.name\":\"detectUnusedVariables\",\"description\":\"Variable 'var2' is not used in the snapshot.\",\"type\":\"warning\"}]"
+            "text": "[{\"node_path_ui\":\"vars/var2\",\"policy.name\":\"detectUnusedVariables\",\"description\":\"Variable 'var2' is not used in the snapshot.\",\"type\":\"warning\"},{\"node_path_ui\":\"vars/var1\",\"policy.name\":\"detectUnusedVariables\",\"description\":\"Variable 'var1' is not used in the snapshot.\",\"type\":\"warning\"}]"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Development_1-v87.dpl"
+                  "uri": "Development_1-v88.dpl"
                 }
               }
             }
