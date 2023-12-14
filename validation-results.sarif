@@ -20,21 +20,6 @@
               },
               "defaultConfiguration": {
                 "level": "error"
-              },
-              "result": {
-                "ruleId": "Development_1-v86.dpl:mandatoryKeys",
-                "message": {
-                  "text": "[{\"node_path_ui\":\"\",\"policy.name\":\"mandatoryKeys\",\"description\":\"mandatory key key002 is not found\",\"type\":\"failure\"},{\"node_path_ui\":\"\",\"policy.name\":\"mandatoryKeys\",\"description\":\"mandatory key key001 is not found\",\"type\":\"failure\"}]"
-                },
-                "locations": [
-                  {
-                    "physicalLocation": {
-                      "artifactLocation": {
-                        "uri": "Development_1-v86.dpl"
-                      }
-                    }
-                  }
-                ]
               }
             },
             {
@@ -48,21 +33,6 @@
               },
               "defaultConfiguration": {
                 "level": "error"
-              },
-              "result": {
-                "ruleId": "Development_1-v86.dpl:noForbiddenValues",
-                "message": {
-                  "text": "[{\"node_path_ui\":\"rel1/kubernetes/test-data.json/key1\",\"policy.name\":\"noForbiddenValues\",\"description\":\"forbidden value found in CDI KEY1:VALUE1\",\"type\":\"failure\"}]"
-                },
-                "locations": [
-                  {
-                    "physicalLocation": {
-                      "artifactLocation": {
-                        "uri": "Development_1-v86.dpl"
-                      }
-                    }
-                  }
-                ]
               }
             },
             {
@@ -75,28 +45,62 @@
                 "text": "application.name: Demo_App10, snapshot.name: Development_1-v86.dpl"
               },
               "defaultConfiguration": {
-                "level": "warning"
-              },
-              "result": {
-                "ruleId": "Development_1-v86.dpl:detectUnusedVariables",
-                "message": {
-                  "text": "[{\"node_path_ui\":\"vars/var2\",\"policy.name\":\"detectUnusedVariables\",\"description\":\"Variable 'var2' is not used in the snapshot.\",\"type\":\"warning\"},{\"node_path_ui\":\"vars/var1\",\"policy.name\":\"detectUnusedVariables\",\"description\":\"Variable 'var1' is not used in the snapshot.\",\"type\":\"warning\"}]"
-                },
-                "locations": [
-                  {
-                    "physicalLocation": {
-                      "artifactLocation": {
-                        "uri": "Development_1-v86.dpl"
-                      }
-                    }
-                  }
-                ]
+                "level": "error"
               }
             }
           ]
         }
       },
-      "results": []
+      "results": [
+        {
+          "ruleId": "Development_1-v86.dpl:mandatoryKeys",
+          "kind": "fail",
+          "message": {
+            "text": "[{\"node_path_ui\":\"\",\"policy.name\":\"mandatoryKeys\",\"description\":\"mandatory key key002 is not found\",\"type\":\"failure\"},{\"node_path_ui\":\"\",\"policy.name\":\"mandatoryKeys\",\"description\":\"mandatory key key001 is not found\",\"type\":\"failure\"}]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Development_1-v86.dpl"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "Development_1-v86.dpl:noForbiddenValues",
+          "kind": "fail",
+          "message": {
+            "text": "[{\"node_path_ui\":\"rel1/kubernetes/test-data.json/key1\",\"policy.name\":\"noForbiddenValues\",\"description\":\"forbidden value found in CDI KEY1:VALUE1\",\"type\":\"failure\"}]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Development_1-v86.dpl"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "Development_1-v86.dpl:detectUnusedVariables",
+          "kind": "fail",
+          "message": {
+            "text": "[{\"node_path_ui\":\"vars/var1\",\"policy.name\":\"detectUnusedVariables\",\"description\":\"Variable 'var1' is not used in the snapshot.\",\"type\":\"warning\"},{\"node_path_ui\":\"vars/var2\",\"policy.name\":\"detectUnusedVariables\",\"description\":\"Variable 'var2' is not used in the snapshot.\",\"type\":\"warning\"}]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Development_1-v86.dpl"
+                }
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
